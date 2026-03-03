@@ -21,6 +21,30 @@ public class insert {
         node.next=head;
         tail=node;
     }
+    public void deletee(int value){
+
+        Node temp=head;
+        if(temp.value==value){
+            head=temp.next;
+            tail=head;
+            return;
+        }do {
+            Node n = temp.next;
+            if (n.value == value) {
+                temp.next = n.next;
+               break;
+
+            }
+            temp = temp.next;}
+            while (temp != head) ;
+
+        }
+
+
+
+
+
+
     public void display(){
         Node temp=head;
         if(head==tail){
@@ -38,6 +62,7 @@ public class insert {
         list.insertAfterTail(60); list.insertAfterTail(61);
         list.insertAfterTail(62); list.insertAfterTail(63);
         list.insertAfterTail(64); list.insertAfterTail(65);
+        list.deletee(620);
         list.display();
     }
 }
