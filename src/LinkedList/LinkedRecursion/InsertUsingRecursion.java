@@ -34,7 +34,7 @@ public class InsertUsingRecursion {
     public void insertFirst(int data){
         Node node = new Node(data);
         node.next=head;
-        head=node;hhhhh
+        head=node;
         if(tail==null){
             tail=head;
         }

@@ -76,7 +76,7 @@ public class deletee {
         list.insertLast(76);
         list.insertLast(98);
         list.display();
-        list.deleteNode(0);
+        list.deleteNode(3);
         list.display();
     }
 }
